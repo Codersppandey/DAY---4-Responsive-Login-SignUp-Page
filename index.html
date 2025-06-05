@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sliding Neon Auth Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      <div class="form-slider" id="formSlider">
+
+        <!-- Login Form -->
+        <div class="form-section">
+          <h2>Login</h2>
+          <input type="text" id="loginUsername" placeholder="Username or Email" />
+          <input type="password" id="loginPassword" placeholder="Password" />
+          <button onclick="handleLogin()">Login</button>
+          <div class="toggle-link">Don't have an account? <a onclick="toggleForms()">Sign Up</a></div>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <div class="form-section">
+          <h2>Sign Up</h2>
+          <input type="text" id="signupUsername" placeholder="Username" />
+          <input type="email" id="signupEmail" placeholder="Email" />
+          <input type="password" id="signupPassword" placeholder="Password" />
+          <button onclick="handleSignup()">Sign Up</button>
+          <div class="toggle-link">Already have an account? <a onclick="toggleForms()">Login</a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
